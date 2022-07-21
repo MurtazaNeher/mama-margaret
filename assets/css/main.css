@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--p-font);
+}
+
+ :root {
+    --head-font: Neue Einstellung;
+    --p-font: 'Noto Sans', sans-serif;
+    --white: #ffffff;
+    --black: #000000;
+    --yellow: #E37F09;
+}
+
+@font-face {
+    font-family: Neue Einstellung;
+    src: url('/assets/fonts/Neue\ Einstellung\ Bold.ttf');
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    /* list-style: none; */
+}
+
+h1 {
+    display: block;
+    font-size: 3.1rem;
+    line-height: 4.5rem;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.mt-60 {
+    margin-top: 60px !important;
+}
+
+.mt-80 {
+    margin-top: 80px !important;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.mb-60 {
+    margin-bottom: 60px !important;
+}
+
+.mb-80 {
+    margin-bottom: 80px !important;
+}
+
+.mb-100 {
+    margin-bottom: 100px !important;
+}
+
+.pt-20 {
+    padding-top: 20px !important;
+}
+
+.pt-40 {
+    padding-top: 40px !important;
+}
+
+.pt-60 {
+    padding-top: 60px !important;
+}
+
+.pt-80 {
+    padding-top: 80px !important;
+}
+
+.pt-100 {
+    padding-top: 100px !important;
+}
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.pb-40 {
+    padding-bottom: 40px !important;
+}
+
+.pb-60 {
+    padding-bottom: 60px !important;
+}
+
+.pb-80 {
+    padding-bottom: 80px !important;
+}
+
+.pb-100 {
+    padding-bottom: 100px !important;
+}
+
+.p-50 {
+    padding: 50px !important;
+}
+
+.p-20 {
+    padding: 20px !important;
+}
+
+.p-40 {
+    padding: 40px !important;
+}
+
+.para {
+    font-family: var(--p-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--black);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sec-head {
+    margin-bottom: 20px;
+}
+
+.sec-head h3 {
+    font-size: 2rem;
+    color: var(--black);
+    font-family: var(--head-font);
+}
+
+.flex-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-ccs {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+
+/* Navbar */
+
+.navbar {
+    padding: 30px 0px;
+}
+
+.navbar .navbar-brand img {
+    width: 300px;
+}
+
+.navbar .nav-link {
+    font-family: var(--head-font);
+    color: var(--black);
+    padding-left: 50px !important;
+}
+
+
+/* Header */
+
+.hero-banner {
+    position: relative;
+}
+
+.hero-banner .hero-bg-wrapper img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: auto;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero-banner .l-part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-banner .l-part .sec-head h3,
+.hero-banner .l-part .para {
+    color: var(--white);
+}
+
+.hero-banner .r-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-banner .hero-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    /* position: absolute; */
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0px 4px 30px 5px #00000021, 0px -4px 30px 5px #00000021;
+    padding: 50px;
+}
+
+.hero-banner .hero-img-wrapper img {
+    width: 500px;
+}
+
+
+/* Services Section */
+
+.serv-sec {
+    padding: 100px 0px;
+}
+
+.serv-sec .serv-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.serv-card-wrapper .scard {
+    max-width: 288px;
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.serv-card-wrapper .scard .sc-img {
+    height: 80px;
+    margin: 10px 0px;
+}
+
+.serv-card-wrapper .scard .scard-body {
+    margin: 10px 0px;
+}
+
+.serv-card-wrapper .scard .scard-body .card-title {
+    font-family: var(--head-font);
+    color: var(--black);
+    margin-bottom: 10px;
+    font-size: 20px;
+    /* padding: 0px 20%; */
+}
+
+.serv-card-wrapper .scard .scard-body .card-text {
+    font-family: var(--p-font);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 100 !important;
+}
+
+
+/* Responsive bg */
+
+.responsive-bg-img-wrapper img {
+    display: none;
+}
+
+
+/* Section - 3 */
+
+.sec-3 .sec-3-img-wrapper {
+    position: relative;
+}
+
+.sec-3 .sec-3-img-wrapper::before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    z-index: -1;
+    left: -22%;
+    top: -14%;
+    background: url(/assets/images/sec-3-img-bg.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sec-3 .sec-3-img-wrapper img {
+    width: 90%;
+    left: 5%;
+    position: relative;
+}
+
+
+/* Section - 4 */
+
+.sec-4 .sec-4-img-wrapper {
+    position: relative;
+}
+
+.sec-4 .sec-4-img-wrapper::before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    z-index: -1;
+    right: -22%;
+    top: -14%;
+    background: url(/assets/images/sec-4-img-bg.png);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sec-4 .sec-4-img-wrapper img {
+    width: 90%;
+    left: 5%;
+    position: relative;
+}
+
+
+/* Footer - Banner  */
+
+.footer-banner {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: -50%;
+}
+
+.footer-logo-wrapper img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.footer-logo-wrapper p {
+    font-family: var(--head-font);
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.footer-bg-wrapper {
+    position: relative;
+}
+
+.footer-bg-wrapper img {
+    position: relative;
+    width: 123%;
+    left: -11%;
+    bottom: 0;
+}
+
+
+/* Footer*/
+
+.footer {
+    background-color: #161925;
+    padding: 10px 0px;
+}
+
+.footer .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-wrapper .l-part img {
+    width: 150px;
+}
+
+.footer .footer-wrapper .r-part p {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 200;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .navbar-brand img {
+        width: 200px;
+    }
+    .serv-sec .serv-card-wrapper {
+        gap: 50px;
+        justify-content: center;
+    }
+    .serv-card-wrapper .scard {
+        width: 90% !important;
+    }
+    .responsive-bg {
+        background: #050C25 !important;
+    }
+    .mob-row-reverse,
+    .sec-4 .row {
+        flex-direction: column-reverse !important;
+    }
+    .footer .footer-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer .footer-wrapper .l-part {
+        margin-bottom: 20px;
+    }
+    .footer .footer-wrapper .r-part p {
+        text-align: center;
+    }
+    .footer-bg-wrapper {
+        display: none;
+    }
+    .footer-logo-wrapper {
+        bottom: 0;
+        margin: 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .serv-card-wrapper .scard {
+        width: 47.5%;
+        margin-bottom: 30px;
+    }
+    .serv-sec .serv-card-wrapper {
+        gap: 50px;
+    }
+    .sec-3 .sec-3-img-wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .sec-3 .sec-3-img-wrapper::before {
+        display: none;
+    }
+    .sec-3,
+    .sec-3 .para,
+    .sec-3 .sec-head h3 {
+        color: var(--white) !important;
+    }
+    .sec-4,
+    .sec-4 .para,
+    .sec-4 .sec-head h3 {
+        color: var(--white) !important;
+    }
+    .sec-4 .sec-4-img-wrapper::before {
+        display: none;
+    }
+}
